@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/formulario.js"></script>
+</head>
+
+<body>
+  <nav class="nav-class-table">
+    <input class="botonMenu" type="checkbox" id="mostrar-menu-table">
+    <label class="botonMenu" for="mostrar-menu-table">Menu</label>
+    <ul id="navOculto">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="noticias.html">Noticias</a></li>
+      <li><a href="tabla.html">Tabla</a></li>
+    </ul>
+  </nav>
+
+  <form id="formulario">
+    <h1>Complete nuestro formulario</h1>
+    <div>
+      <label for="nombre">Nombre:</label>
+      <input type="text" name="nombre" value="" />
+      <label for="apellido">Apellido:</label>
+      <input type="text" name="apellido" value="" />
+    </div>
+
+    <div>
+      <label for="sexo">Sexo:</label>
+      <input type="radio" name="sexo" value="Hombre" /> Hombre
+      <input type="radio" name="sexo" value="Mujer" /> Mujer
+    </div>
+    <div>
+      <div>
+        <label for="favorito"> ¿Cuáles cosas te gustan?</label>
+      </div>
+      <div>
+        <input type="checkbox" name="favorito" value="Deporte" /> Me gusta el deporte
+        <input type="checkbox" name="favorito" value="Humor" /> Me gustan las cosas graciosas
+        <input type="checkbox" name="favorito" value="Famosos" /> Me gustan los famosos
+        <input type="checkbox" name="favorito" value="politica" /> Me gustan las cosas de politica
+      </div>
+
+    </div>
+    <div>
+      <p> Usa Internet? </p>
+
+      <select>
+        <option value="Obviedad">Ahora</option>
+        <option value="A veces">A veces</option>
+        <option value="Nunca">Nunca</option>
+        <option value="Siempre">Yo vivo en el Internet</option>
+
+      </select>
+    </div>
+
+    <div>
+      <label for="pass"></label>
+      Password utilizada: <input type="password" name="pass" />
+    </div>
+
+    <div class="container">
+      <h2>Demuestre que no es un robot</h2>
+      <!--Randomizo el Capcha -->
+      <p>
+        <img class="imagenCaptcha" id="captcha" src="js/imgcaptchas/1.jpg" />
+      </p>
+      <section class="botonera-contacto">
+        <button type="submit" id="btn-enviar">Enviar</button>
+        <input type="text" id="contrasena" value=""></input>
+        <button onclick="generarcaptcha()">Refresh</button>
+      </section>
+    </div>
+  </form>
+</body>
+
+</html>

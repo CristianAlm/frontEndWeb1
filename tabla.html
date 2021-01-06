@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="build/styles/index.css">
+    <script src="js/tabla.js"></script>
+</head>
+<body>
+    <nav class="nav-class-table">
+        <input class="botonMenu" type="checkbox" id="mostrar-menu-table">
+        <label class="botonMenu" for="mostrar-menu-table">Menu</label>
+        <ul id="navOculto">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="noticias.html">Noticias</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <article class="articlePersona">
+        <h1>Disciplina favorita</h1>
+        
+        <section class="datosPersona">
+            <p>Nombre:<input placeholder="Ingrese su nombre" type="text" id="nombre-table"></p>
+            <p>Apellido:<input placeholder="Ingrese su apellido" type="text" id="apellido-table"></p>
+            <p>Favorito:<input placeholder="Ingrese su disciplina favorita" type="text" id="favorito-table"></p>
+        </section>
+        <section class="botonera">
+            <button id="confirmar">Confirmar datos</button>
+            <button id="Crear3">Cargar 3 datos</button>
+            <button id="borrar" id="btn-DELETE">Borrar</button>
+            <button id="mostarGet">Mostrar</button>
+        </section>
+
+        <section class="ingreso">
+            <p>Ingrese su filtro:</p><input type="text" id="myInput" placeholder="Search for names.." title="Type in a name"><button id="btn-filtrar">filtrar</button><button id="btn-reset">Reset</button>
+    
+        </section>
+
+
+        <table id="paraTabla" class="table">
+            <tr>
+                <td>Fila</td>
+                <td>Nombre</td>
+                <td>Apellido</td>
+                <td>Favorito</td>
+                <td><button class="editar-tabla">Editar</button>
+            </tr>
+        </table>
+    </article>
+    
+</body>
+</html>
